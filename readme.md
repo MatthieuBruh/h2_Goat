@@ -107,15 +107,16 @@ In this history, the biggest mistake from Evaldas was to register the fake domai
 <a name="cve"></a>
 # CVE - Explanation
 ## [Log4j - CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228)
-When an application is developped, we usually add some logs. The logs are used to track what is made in the application. Logs are really usefull to find who dit what and when, so, we can easily find when an error as occured and why. Apache Software Fundation provide a dependency for Java, to help developper for logging.
-On 9 December 2021, a important flaw has been discovered for Log4j 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1).
-LDAP is a standard way to provide access to directory information. In java, to access directory services such as LDAP, we use the inferface JNDI.
-Indeed, JNDI is a interface that gives to Java an access to directory services such as LDAP. 
-It is a very technical attack, but to make it simple, an attacker can send a web page to a server and have it read the entire page, if this web page contains some Java code. So, you can execute some code remotly on a vulnerable server without beeing authenticated.
+When an application is developed, we usually add some logs. The logs are used to track what is made in the application. Logs are really useful to find who did what and when, so, we can easily find when an error as occurred and why. Apache Software Fundation provide a dependency for Java, to help developers for logging.
+On 9 December 2021, an important flaw has been discovered for Log4j 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1).
+LDAP is a standard way to provide access to directory information. In java, to access directory services such as LDAP, we use the interface JNDI.
+Indeed, JNDI is an interface that gives to Java an access to directory services such as LDAP. 
+It is a very technical attack, but to make it simple, an attacker can send a web page to a server and have it read the entire page, if this web page contains some Java code. So, you can execute some code remotely on a vulnerable server without being authenticated.
 
-This attack is classified as **critical** with a CVSS score of 9.3, because you allow a full access to your server to an attacker who can control a log message. The confidentiality, integrity, availability impact are considerate as complete.
+This attack is classified as **critical** with a CVSS score of **9.3**, because you allow a full access to your server to an attacker who can control a log message. The confidentiality, integrity, availability impact are considerate as complete.
+Another huge problem with this attack is the number of companies that are involved, like Amazon AWS, Cloudflare, iCloud, Minecraft Java Edition (Yes, of course!), Steam, Flink, ElasticSearch, Azure, etc. 
 
-### Sources:
+### Sources
 * [CVE - CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228)
 * [CVE details - CVE-2021-44228](https://www.cvedetails.com/cve/CVE-2021-44228/?q=CVE-2021-44228)
 * [Info World - LDAP and JNDI: Together forever](https://www.infoworld.com/article/2076073/ldap-and-jndi--together-forever.html)
