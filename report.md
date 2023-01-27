@@ -26,7 +26,7 @@
   * Development, QA, and production should use the same configuration but with some different credentials,
   * Install only useful features or frameworks. Uninstall unnecessary features,
   * Create a process that analyzes and upgrade configurations based on upgrade, security notes, and patches. Review your cloud permissions,
-  * Segmenting applications in the architecture, increases the componants' security,
+  * Segmenting applications in the architecture, increases the components' security,
   * Use security headers to send directives to clients,
   * Verify the effectiveness of the configuration with automated processes.
 * Possible scenarios
@@ -34,7 +34,21 @@
   * A server returns detailed error messages to the users. It can expose sensitive data/information to everyone.
 
 ## [A06:2021-Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
-
+* A vulnerable and outdated component is a common issue, that we have some difficulties to **test and evaluate** the risk.
+* We can consider that you are vulnerable if:
+  * You don't consider the versions of all your components (and dependencies) that you use,
+  * Your OS or softwares are vulnerable, unsupported, or out of date,
+  * You don't scan regularly for searching vulnerabilities or you do not susbcribe to a security bulletin about component security issues,
+  * You don't upgrade or fix components or dependencies depending on the risks,
+  * You use a software that developers do not test the compatibility of updated, upgraded, or patched libraries,
+  * You don't secure your components.
+* Avoid vulnarable component with a patch management process:
+  * Delete and remove unnecessary features, softwares, components, dependencies,
+  * Create a version inventory of your components and dependencies, and update it continuously,
+  * Monitor continuously the Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD),
+  * Use only official sources to obtain components or dependencies.
+* Possible scenarios
+  * A component is always run with the same authorizations as the main application, can cause serious impacts if the component has one or multiple flows.
 
 ## [A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)
 
