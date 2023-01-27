@@ -128,6 +128,48 @@ Another huge problem with this attack is the number of companies that are involv
 ----
 <a name="sqlzoo"></a>
 # SQLZoo - Solve
+## [0 - SELECT BASICS](https://sqlzoo.net/wiki/SELECT_basics)
+
+### 1. Modify it to show the population of Germany
+
+    SELECT population FROM world WHERE name = 'Germany';
+    # I changed the world France to Germany to select the country that has the name Germany.
+
+### 2. Show the name and the population for 'Sweden', 'Norway' and 'Denmark'.
+
+    SELECT name, population FROM world WHERE name IN ('Sweden', 'Norway', 'Denmark');
+    # I changed the countries that were in the parenthesis with: Sweden, Norway, and Denmark.
+
+### 3. Just the right size
+
+    SELECT name, area FROM world WHERE area BETWEEN 200000 AND 250000;
+    # I changed the numbers that follow the "between" and the "and", the first one is the smallest area and the second one is the biggest area.
+
+## [2 - SELECT FROM WORLD](https://sqlzoo.net/wiki/SELECT_from_WORLD_Tutorial)
+
+### 1. Introduction
+
+    # We can see all the countries with their continent and their population.
+
+### 2. Large Countries
+
+    SELECT name FROM world WHERE population >= 200000000;
+    # I changed to number for the population, and I also changed the operator because it is at least 200000000.
+
+### 3. Per capita GDP
+
+    SELECT name, (gdp/population) FROM world WHERE population >= 200000000;
+    # I added "(gdp/population)" to have the result of the calculation for each country. I also changed the population number to have 200 million.
+
+### 4. South America In millions
+
+    SELECT name, (population/1000000) FROM world WHERE continent = 'South America';
+    # I wrote name and (population/1000000) to have the name and the population in million for each country of the continent South America (condition where).
+
+### 5. France, Germany, Italy
+
+    SELECT name, population FROM world WHERE name in ('France', 'Germany', 'Italy');
+    # I wrote name and the population to have the name and the population attributes. Then, I added the where condition with name IN France, Germany, and Italy. So, it will return each country that has one of this name.
 
 ----
 <a name="webgoat"></a>
