@@ -72,6 +72,16 @@
 ----
 <a name="ddsummary"></a>
 # Darknet Diaries - Summary
+I was scrolling on the Darknet Diaries' website, searching for an interesting subject when my attention was caught by the episode: [EP124: SYNTHETIC REMITTANCE](https://darknetdiaries.com/episode/124/). Indeed, this episod is about social engineering, email, crime and finance. So, I decided to analyze and summarize this episode.
+
+It is the story of Evaldas Rimašauskas, a Lithuanian interested in getting rich, but fast. His story starts in 2012, when Facebook bought Instagram for one billion of dollars.
+In fact, most of the time, it is long and you need a lot of courage to set up a business that makes it profitable. You need to allocate a lot of resources to it to make it attractive and therefore profitable.
+We can take the example of Facebook that needed five years before getting a first profit. It is very long!! However, in 2012 Facebook had a revenue of five billion dollars. By this fact, Facebook bought Instagram for one billion dollars.
+In 2012, Evaldas was forty-three years old, and Facebook's purchase of Instagram did not escape his ears. When he heard it, he had several questions in his head, such as: "Who’s the person on Facebook that has the ability to write a one-billion-dollar check?". He was fully fascinated by the financial system of a company. So, he learned a lot about how does check works. He got interested about scamming companies with a fake check. Evaldas was not interested in earning undereds of dollars, he wanted thousands of dollars, and quickly. He quickly understood that for scamming a company he needed to have a lot of information about a company.
+He knew that I could not directly ask to Facebook who sign the checks, he needed to go step by step and with the help of his friends.
+Firstly, we his friends, they started to ask to Facebook some basic questions, like the accounting department number, or what they should do if Facebook needs to pay them, etc. For them, it would be a huge help to have the email address of someone that works in Facebook's accounting department. By having the email, you can write an email and have a phone number in the signature of the reply, then you can call the person to try to social-engineer him.
+At the same time, they also had the idea to attack Facebook by using business relations (partners, contractors, etc.). They learned that Facebook was working with Quanta Computer, based in Taiwan. This company repairs and refurbishes tablets and point-of-sale devices as well as bill servers, and provides Cloud computing services. 
+So, he social-engineer the both companies to get as much as information possible to know how does Facebook and Quanta Computer are working. It is the set of all the data that he got that gives a better understanding to Evaldas.
 
 ----
 <a name="cve"></a>
