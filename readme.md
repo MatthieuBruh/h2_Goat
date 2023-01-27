@@ -85,17 +85,23 @@ First of all, we his friends, they started to ask to Facebook some basic questio
 At the same time, they also had the idea to attack Facebook by using business relations (partners, contractors, etc.). They learned that Facebook was working with Quanta Computer, based in Taiwan. This company repairs and refurbishes tablets and point-of-sale devices as well as bill servers, and provides Cloud computing services. 
 So, he social-engineer the both companies to get as much as information possible to know how does Facebook and Quanta Computer are working. It is the set of all the data that he got that gives a better understanding to Evaldas.
 
-Then, he got the "BIG IDEA" to prentend to be Quanta and to send an invoice to Facebook. So then, Facebook will pay him and not Quanta. However, to do that, he need to make everything perfect, by using the previous information.
+Then, he got the "BIG IDEA" to pretend to be Quanta and to send an invoice to Facebook. So, then, Facebook will pay him and not Quanta. However, to do that, he needs to make everything perfect, by using the previous information.
 
 To achieve his goal he did the following steps:
-1. He created a company named Quanta Computer in Latvia and Cypress and he openend bank accounts for them.
+1. He created a company named Quanta Computer in Latvia and Cypress and he opened bank accounts for them.
 2. Then he got a real invoice from the real Quanta Computer company. With this invoice, he knew exactly who was paying them on Facebook.
-3. He needed a real email address that look like the one of Quanta Computer. For this point, we don't really know what he did, but we pretend that he registred a domain name very similar as the one of Quanta Computer.
+3. He needed a real email address that look like the one of Quanta Computer. At this point, we don't really know what he did, but we pretend that he registered a domain name very similar as the one of Quanta Computer.
 
 Then, he was finally ready, he had his fake invoice, his fake domain, and fake business all set up.
-He wrote the email and sent it to the correct person of Facebook. The email was saying to Facebook to update where payment should be sent. So that, payments would be sent to the fake Quata Computer and not to the real company.
-He didn't had to wait for a long time before having first results. He recived a notification from his bank, saying that he recived money from Facebook. So, his plan has worked!! And the plan worked more than one time, he recived several times huge amount of money from Facebook.
+He wrote the email and sent it to the correct person on Facebook. The email was saying to Facebook to update where payment should be sent. So that, payments would be sent to the fake Quata Computer and not to the real company.
+He didn't have to wait for a long time before having first results. He received a notification from his bank, saying that he received money from Facebook. So, his plan has worked!! And the plan worked more than one time, he received several times huge amounts of money from Facebook.
 
+A bit later, Evaldas learned that Quanta was also working with Google. He decided to do the same to Google as he did to Facebook, and Google also fell in the trap. 
+He also decided to open different bank accounts in different countries (Slovakia, Lithuania, Hungary, and Hong Kong) to split the money. In addition, if a bank asked him from where does the money come, he could proof the transaction with some fake legal documents.
+
+During two years, Evaldas received money ($23 million from Google and $98 million from Facebook) from the both companies and his system of laundering money was working properly. However, at some point, the both companies understood the scam, maybe because Quanta called them for the unpaid invoices. The FBI has need notified, and because of the huge amount of money that was involved, they directly acted. Evaldas has been finally arrested by the Lithuanian authorities and he was extradited to New York to be judged. His sentence was five years in prison with a fine of $26 million.
+
+In this history, the biggest mistake from Evaldas was to register the fake domain with his personal email address. It has considerably helped the authorities to find him. Nowadays, this kind of attacks is still possible although, mailboxes have some system to prevent for the junk mail and quarantine. However, it reminds us of the dangerousness of not having security for your IT system. The security is not only about system protection but also about human formation.
 
 ----
 <a name="cve"></a>
