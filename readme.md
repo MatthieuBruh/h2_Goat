@@ -47,11 +47,27 @@
   * Create a version inventory of your components and dependencies, and update it continuously,
   * Monitor continuously the Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD),
   * Use only official sources to obtain components or dependencies.
-* Possible scenarios
+* Possible scenario
   * A component is always run with the same authorizations as the main application, can cause serious impacts if the component has one or multiple flows.
 
 ## [A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)
-
+* 94% of the applications that have been tested for injections issues. The max incidence rate is off 19%, and the average is off 3%.
+* We can consider that an application is vulnerable if:
+  * Data that are given by the user are not **validated**, **filtered**, or **sanitized**,
+  * Non-parameterized calls without context-aware and dynamic calls are directly used in the interpreter,
+  * Data given by the users are directly used as parameters to extract additional records,
+  * External data are directly used or concatened, so the SQL request can contain malicious queries/commands/procedures.
+* Most common injection are SQL, NoSQL, OS, Object Relational Mapping, Expression Level, or Object Graph Navigation Library.
+* Reviewing source code is the best way to detect possible injections.
+* It is recommended to automate testing of headers, URL, cookies, JSON, SOAP, XML.
+* Avoid injections by keeping data separate from commands and queries
+  * Use API, which avoids the entirely utilisation of the interpreter, and provides a parameterized interface, or migrates Object Relational mapping.
+  * Use input validation for the server side.
+  * For the remaining dynamic requests, avoid as much as possible special characters and use the escape syntax.
+  * Use controls that prevent mass disclosure of records.
+* Possible scenarios
+  * If you have an application that uses unsafe data in the construction of a SQL query.
+  * It is the same for an HQL query as a SQL query.
 
 ----
 <a name="ddsummary"></a>
