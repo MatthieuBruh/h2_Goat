@@ -116,12 +116,12 @@ It is a very technical attack, but to make it simple, an attacker can send a web
 This attack is classified as **critical** with a CVSS score of 9.3, because you allow a full access to your server to an attacker who can control a log message. The confidentiality, integrity, availability impact are considerate as complete.
 
 ### Sources:
-[CVE - CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228)
-[CVE details - CVE-2021-44228](https://www.cvedetails.com/cve/CVE-2021-44228/?q=CVE-2021-44228)
-[Info World - LDAP and JNDI: Together forever](https://www.infoworld.com/article/2076073/ldap-and-jndi--together-forever.html)
-[UpGuard](https://www.upguard.com/blog/apache-log4j-vulnerability)
-[DataCenter Magazine (French)](https://datacenter-magazine.fr/tour-savoir-sur-la-faille-apache-log4j-une-vulnerabilite-aux-proportions-catastrophiques-ou-le-pire-reste-a-venir/)
-[SiecleDigital - La faille Log4j considérée comme une « vulnérabilité endémique » (French)](https://siecledigital.fr/2022/07/18/la-faille-log4j-consideree-comme-une-vulnerabilite-endemique/)
+* [CVE - CVE-2021-44228](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228)
+* [CVE details - CVE-2021-44228](https://www.cvedetails.com/cve/CVE-2021-44228/?q=CVE-2021-44228)
+* [Info World - LDAP and JNDI: Together forever](https://www.infoworld.com/article/2076073/ldap-and-jndi--together-forever.html)
+* [UpGuard](https://www.upguard.com/blog/apache-log4j-vulnerability)
+* [DataCenter Magazine (French)](https://datacenter-magazine.fr/tour-savoir-sur-la-faille-apache-log4j-une-vulnerabilite-aux-proportions-catastrophiques-ou-le-pire-reste-a-venir/)
+* [SiecleDigital - La faille Log4j considérée comme une « vulnérabilité endémique » (French)](https://siecledigital.fr/2022/07/18/la-faille-log4j-consideree-comme-une-vulnerabilite-endemique/)
 
 
 ----
